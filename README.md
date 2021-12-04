@@ -3,11 +3,11 @@
 You should maintain a separate GitHub repo for this project with the following files:
 ![photo](https://github.com/KaylaBolden/data_mid_bootcamp_project_classification/blob/master/Screen%20Shot%202021-12-04%20at%205.08.14%20PM.png)
 
-- `Readme.md` - This markdown will explain the data analysis workflow including the problem statement/ business the objective, data extraction, data wrangling, etc. Here you should explain the business analytic approach you used to solve the problem. Please be detailed in explaining the steps you followed. It is important to keep in mind that the document is written for the readers, who may or may not have the technical expertise with Python/SQL/Tableau.
-- Python File - It can be either uploaded as a `.ipynb` file (Jupyter notebook) or `.py` file. The Python code should be well documented with comments, explaining the code, EDA operations, logic used - especially with data cleaning operations, and any assumptions followed in the model.
-- Dataset/datasets (provided to you)
+- `Readme.md` - This markdown will explain the data analysis workflow including the problem statement/ business the objective, data extraction, data wrangling, etc. 
+- Dataset/datasets 
 - Tableau workbook
 - File containing SQL queries
+- 
 # Objective 
 Credit Card Services are a large revenue driver for the bank, however blindly offering to everyone is costly and inefficient. It is necessary to understand what our market looks like and who best to target.. 
 
@@ -70,7 +70,6 @@ Build a model to predict if a customer is likely to accept or reject a credit ca
       11. Train Model 
       12. Test Model
 
-### Some other tips
 # Transformations
     Tested a variety of methods to convert my continuos variables into normal distributions:
     1. log
@@ -126,13 +125,10 @@ This data set includes:
 
 
 # SQL
-The dataset provided [**Classisfication Model.sql**]
-(https://github.com/KaylaBolden/data_mid_bootcamp_project_classification/blob/master/Classisfication%20Model.sql). 
+The dataset provided [**Classisfication Model.sql**](https://github.com/KaylaBolden/data_mid_bootcamp_project_classification/blob/master/Classisfication%20Model.sql). 
 
 # Tableau
-A full analysis with visuals breaking down key drivers and customer demographic profiles can be found in [**Credit Card Offers.twbx**]
-(https://github.com/KaylaBolden/data_mid_bootcamp_project_classification/blob/master/Credit%20Card%20Offers.twbx). 
+A full analysis with visuals breaking down key drivers and customer demographic profiles can be found in [**Credit Card Offers.twbx**](https://github.com/KaylaBolden/data_mid_bootcamp_project_classification/blob/master/Credit%20Card%20Offers.twbx). 
 
 # Presentation
-A powerpoint containing the agenda and tying it all together can be found in [**Offer Acceptance Slides.pptx**]
-(https://github.com/KaylaBolden/data_mid_bootcamp_project_classification/blob/master/Offer%20Acceptance%20Slides.pptx). 
+A powerpoint containing the agenda and tying it all together can be found in [**Offer Acceptance Slides.pptx**](https://github.com/KaylaBolden/data_mid_bootcamp_project_classification/blob/master/Offer%20Acceptance%20Slides.pptx). 
