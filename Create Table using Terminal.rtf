@@ -1,0 +1,54 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Last login: Thu Dec  2 18:26:58 on ttys002\
+(base) kb@Kaylas-MacBook-Pro ~ % /Users/kb/Ironhack/Labs/data_mid_bootcamp_project_classification/creditcardmarketing.csv\
+zsh: permission denied: /Users/kb/Ironhack/Labs/data_mid_bootcamp_project_classification/creditcardmarketing.csv\
+(base) kb@Kaylas-MacBook-Pro ~ % mysql -u root -p\
+Enter password:\
+Welcome to the MySQL monitor.  Commands end with ; or \\g.\
+Your MySQL connection id is 15\
+Server version: 8.0.26 Homebrew\
+\
+Copyright (c) 2000, 2021, Oracle and/or its affiliates.\
+\
+Oracle is a registered trademark of Oracle Corporation and/or its\
+affiliates. Other names may be trademarks of their respective\
+owners.\
+\
+Type 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\
+\
+mysql> use credit_card_data\
+ERROR 1049 (42000): Unknown database 'credit_card_data'\
+mysql> use credit_card_data;\
+ERROR 1049 (42000): Unknown database 'credit_card_data'\
+mysql> show databases;\
++----------------------------+\
+| Database                   |\
++----------------------------+\
+| bank                       |\
+| bank_demo                  |\
+| BootCamps                  |\
+| credit_card_classification |\
+| information_schema         |\
+| mysql                      |\
+| performance_schema         |\
+| sakila                     |\
+| sys                        |\
++----------------------------+\
+9 rows in set (0.01 sec)\
+\
+mysql> use credit_card_classification;\
+Reading table information for completion of table and column names\
+You can turn off this feature to get a quicker startup with -A\
+\
+Database changed\
+mysql> LOAD DATA LOCAL INFILE '/Users/kb/Ironhack/Labs/data_mid_bootcamp_project_classification/creditcardmarketing.csv' INTO TABLE credit_card_data FIELDS TERMINATED BY ',';\
+Query OK, 18000 rows affected, 36095 warnings (0.33 sec)\
+Records: 18000  Deleted: 0  Skipped: 0  Warnings: 36095\
+\
+mysql>}
