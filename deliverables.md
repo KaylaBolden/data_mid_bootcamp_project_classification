@@ -1,19 +1,131 @@
-# Mid-bootcamp project deliverables
+# Project_FIFA_MoneyBall
 
-You should maintain a separate GitHub repo for this project with the following files:
+![photo](https://github.com/KaylaBolden/data_mid_bootcamp_project_classification/blob/master/Screen%20Shot%202021-12-04%20at%205.08.14%20PM.png)
 
-- `Readme.md` - This markdown will explain the data analysis workflow including the problem statement/ business the objective, data extraction, data wrangling, etc. Here you should explain the business analytic approach you used to solve the problem. Please be detailed in explaining the steps you followed. It is important to keep in mind that the document is written for the readers, who may or may not have the technical expertise with Python/SQL/Tableau.
-- Python File - It can be either uploaded as a `.ipynb` file (Jupyter notebook) or `.py` file. The Python code should be well documented with comments, explaining the code, EDA operations, logic used - especially with data cleaning operations, and any assumptions followed in the model.
-- Dataset/datasets (provided to you)
-- Tableau workbook
-- File containing SQL queries
+# Objective 
+Credit Card Services are a large revenue driver for the bank, however blindly offering to everyone is costly and inefficient. It is necessary to understand what our market looks like and who best to target.. 
 
-\*\* You are provided with the rubrics that will be used to evaluate the projects. Please go through the document for more details on the specificities for different files.
+So, the goal is to understand the demographics and other characteristics of the bank’s customers that accept a credit card offer and that do not accept a credit card.
+Build a model to predict if a customer is likely to accept or reject a credit card offer.
+ 
+ # Used tools 
+  Programs: 
+  
+      1. Jupiter - python
+      2. Tableau
+      3. Powerpoint
+  
+  Methods:
+  
+      1. Logistic Regression
+      2. Histograms, distribution plots, heat maps, box-whisker plots, confusion matrix, bar plots
+      
+  Libraries:
+  
+      1. Normalizer
+      2. StandardScaler
+      3. confusion_matrix
+      4. cohen_kappa_score
+      5. math
+      6. statistics 
+      7. matplotlib.pyplot
+      8. seaborn
+      9. statsmodels.api
+      10. train_test_split
+      11. one hot encoder
+      12. numpy
+      13. pandas
+      14. statsmodels.formula.api
+      15. linear_model
+      16. is_numeric_dtype
+      17. LogisticRegression
+      18. roc_auc_score
+      19. accuracy_score
+      20. PIL
+      
+ # Workflow
+      1. Gather the Data 
+      2. Explore the Data 
+      3. Clean the Data 
+          a. Categorical data: 
+            i. needs to be grouped into fewer buckets
+            ii. dropped if there are too many instances
+            iii. cleaned if there are various values with the same meaning 
+          b. Numerical data: 
+            i. needs to be converted to number if object (may require functions for data transformations)
+      4. Dealing with Nulls 
+      5. Dealing with Outliers 
+      6. Transform numerical columns to conform to a more normal standard distribution
+      7. Check Multicollinearity (but no need to modify since logistic regression isn't impacted by multicollinearity) 
+      8. Normalize and or standardize the data 
+      9. Check and rectify data imbalance
+      10. Apply Train-Test Split 
+      11. Train Model 
+      12. Test Model
 
-### Some other tips
+# Transformations
+    Tested a variety of methods to convert my continuos variables into normal distributions:
+    1. log
+    2. square root
+    3. square
+    4. cubed 
+    
+    Ultimately the square root was the best transformation on the quarterly variables. While the log transformation was the best for the average balance variable. 
 
-- Pay attention to the naming convention: organize the files in folders with appropriate names
-- Do not include code snippets in the `Readme.md` file
-- Explain the business insights and the regression/classification model results
-- Explain the future score of work
-- Make daily commits to the repo
+# Scaling and Balancing data
+
+    Tested a variety of scaling methods:
+      1. Normalizer
+      2. Standard Scaler
+      3. Min – Max Scaler
+
+    Tested multiple data balancing methods:
+      1. Random Over Sampling
+      2. Random Under Sampling
+      3. SMOTE
+      4. Tomeklinks
+
+    Out of all the methods, standard scaler and Random over Sampling preoduced the highest ROC-AUC and Kappa scores:
+![photo](https://github.com/KaylaBolden/data_mid_bootcamp_project_classification/blob/master/table.png)
+
+# Results and conlusions 
+      The accuracy of the model on test set is: 0.70 and the Kappa of the model is: 0.41. The ROC-AUC is 77%
+![photo](https://github.com/KaylaBolden/data_mid_bootcamp_project_classification/blob/master/Screen%20Shot%202021-12-04%20at%204.51.05%20PM.png)
+
+      
+# Improvements
+      Remove highly correlated columns and then remove outliers so that fewer rows are filtered out.
+      
+## Dataset
+
+The dataset provided [**creditcardmarketing.csv**](https://github.com/KaylaBolden/data_mid_bootcamp_project_classification/blob/master/creditcardmarketing.csv) 
+
+
+This data set includes:
+
+1. **CreditCardMarketing** data:
+
+    |   |   |
+    |---|---|
+    |  Customer Number | Offer Accepted   |
+    | Mailer Type  | Income Level  |
+    | Bank Accounts Open  |  Overdraft Protection |
+    |  Credit Rating | Credit Cards Held  |
+    | Homes Owned|Household Size|
+    | Own Your Home|Average Balance|
+    | Balance||
+    |||
+
+
+# SQL
+The dataset provided [**Classisfication Model.sql**]
+(https://github.com/KaylaBolden/data_mid_bootcamp_project_classification/blob/master/Classisfication%20Model.sql). 
+
+# Tableau
+A full analysis with visuals breaking down key drivers and customer demographic profiles can be found in [**Credit Card Offers.twbx**]
+(https://github.com/KaylaBolden/data_mid_bootcamp_project_classification/blob/master/Credit%20Card%20Offers.twbx). 
+
+# Presentation
+A powerpoint containing the agenda and tying it all together can be found in [**Offer Acceptance Slides.pptx**]
+(https://github.com/KaylaBolden/data_mid_bootcamp_project_classification/blob/master/Offer%20Acceptance%20Slides.pptx). 
+
