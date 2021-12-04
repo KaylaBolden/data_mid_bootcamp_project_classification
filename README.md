@@ -100,9 +100,6 @@ Build a model to predict if a customer is likely to accept or reject a credit ca
 ![photo](https://github.com/KaylaBolden/data_mid_bootcamp_project_classification/blob/master/Screen%20Shot%202021-12-04%20at%204.51.05%20PM.png)
 
 
-# Improvements
-      Remove highly correlated columns and then remove outliers so that fewer rows are filtered out.
-
 ## Dataset
 
 The dataset provided [**creditcardmarketing.csv**](https://github.com/KaylaBolden/data_mid_bootcamp_project_classification/blob/master/creditcardmarketing.csv) 
