@@ -121,10 +121,8 @@ This data set includes:
 The dataset provided [**Classisfication Model.sql**](https://github.com/KaylaBolden/data_mid_bootcamp_project_classification/blob/master/Classisfication%20Model.sql). 
 
 # Tableau
-A full analysis with visuals breaking down key drivers and customer demographic profiles can be found in [**Credit Card Offers.twbx**]
-(https://github.com/KaylaBolden/data_mid_bootcamp_project_classification/blob/master/Credit%20Card%20Offers.twbx). 
+A full analysis with visuals breaking down key drivers and customer demographic profiles can be found in [**Credit Card Offers.twbx**](https://github.com/KaylaBolden/data_mid_bootcamp_project_classification/blob/master/Credit%20Card%20Offers.twbx). 
 
 # Presentation
-A powerpoint containing the agenda and tying it all together can be found in [**Offer Acceptance Slides.pptx**]
-(https://github.com/KaylaBolden/data_mid_bootcamp_project_classification/blob/master/Offer%20Acceptance%20Slides.pptx). 
+A powerpoint containing the agenda and tying it all together can be found in [**Offer Acceptance Slides.pptx**](https://github.com/KaylaBolden/data_mid_bootcamp_project_classification/blob/master/Offer%20Acceptance%20Slides.pptx). 
 
