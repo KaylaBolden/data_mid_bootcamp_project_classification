@@ -118,8 +118,7 @@ This data set includes:
 
 
 # SQL
-The dataset provided [**Classisfication Model.sql**]
-(https://github.com/KaylaBolden/data_mid_bootcamp_project_classification/blob/master/Classisfication%20Model.sql). 
+The dataset provided [**Classisfication Model.sql**](https://github.com/KaylaBolden/data_mid_bootcamp_project_classification/blob/master/Classisfication%20Model.sql). 
 
 # Tableau
 A full analysis with visuals breaking down key drivers and customer demographic profiles can be found in [**Credit Card Offers.twbx**]
